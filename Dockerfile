@@ -4,7 +4,7 @@ MAINTAINER O. Schacher <oli@fuglu.org>
 
 #### GET DEPENDENCIES
 
-RUN yum install -y http://mirror.switch.ch/ftp/mirror/epel/beta/7/x86_64/epel-release-7-0.2.noarch.rpm
+RUN yum install -y http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-1.noarch.rpm
 RUN yum -y install python-setuptools wget gcc \
   clamav clamav-scanner clamav-update spamassassin\
   postfix tar python-sqlalchemy python-magic mariadb-devel python-devel 
