@@ -4,9 +4,9 @@ MAINTAINER O. Schacher <oli@fuglu.org>
 
 #### GET DEPENDENCIES
 
-RUN yum install -y http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-1.noarch.rpm
+RUN yum install -y http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 RUN yum -y install python-setuptools wget gcc \
-  clamav clamav-scanner clamav-update spamassassin\
+  clamav clamav-server clamav-update spamassassin\
   postfix tar python-sqlalchemy python-magic mariadb-devel python-devel 
 
 RUN easy_install supervisor supervisor-stdout syslog-stdout MySQL-python BeautifulSoup
